@@ -1,0 +1,124 @@
+
+:root{
+    
+    --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    
+    --Brown800: hsl(14, 45%, 36%);
+    
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+
+
+html, body{
+padding:0;
+border:0;
+width:100%;
+height:100vh;
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+background-color: var(--Stone100);
+font-family: 'Outfit', sans-serif;
+font-size: 8px;
+}
+.main{
+    background-color: white;
+    border-radius: 10px;
+    width:310px;
+    height:718px;
+    padding:15px;
+   margin:0 auto;
+ 
+
+}
+.img{
+    width: 280px;
+    height:auto;
+    display: block;
+    margin-top: 25px;
+}
+.title4, .title2, .title3{
+    color:var(--Brown800);
+    font-family:'Young Serif', sans-serif;
+    font-size: 12px;
+}
+.head{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family:'Young Serif', sans-serif;
+}
+.instr{
+    font-weight: 400;
+    font-size: 6.5px;
+}
+ul, ol {
+    padding-left: 0; /* Remove default padding */
+}
+.time{
+background-color: var(--Rose50);
+width:285px;
+padding:11px;
+margin-top: 10px;
+}
+.title1{
+    color:var(--Rose800);
+    font-size: 10px;
+}
+.time ul{
+    padding-left:15px;
+}
+.up{
+    font-weight: 800;
+}
+.ing{
+    margin:10px 0 10px;
+    padding:0px;
+}
+.list2 ul{
+   margin-left: 17px;
+}
+hr{
+    border-top: var(--Stone100);
+}
+.list3 ol{
+    margin-left: 14px;
+}
+.list3 li::before{
+    content:"";
+    margin-right: 2px;
+   
+}
+.tab{
+    margin:10px 0 5px;
+}
+td + td {
+color:var(--Brown800);
+padding-left: 30px;}
+table {
+    border-collapse: collapse; /* Ensure borders collapse together */
+    width: 100%; /* Ensure table takes full width */
+}
+tr { 
+    
+   border-bottom: 1px solid var(--Stone100);}
+
+@media screen and (max-width:375px){
+.main{
+    width:100%;
+    height: 100vh;
+}
+} 
+    
